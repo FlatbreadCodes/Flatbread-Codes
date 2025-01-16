@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+          <img src="https://m.media-amazon.com/images/I/61rbz-0kgTL.jpg" alt="a knife with a wooden handle" width="250">
+          <p>Sartuko Knife</p>
+          <p> $43.41 </p>
+    </section> 
+    <section>
+        <h2>Payment Information</h2>
+        <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+            <label for="card-name">Card Holder Name:</lable>
+            <input
+              id="card-name"
+              name="card-name"
+              type="text"
+              placeholder="Full Name"
+              aria-required="true"
+              required>
+              <br>
+              <label for="card-number">Card Number:</lable>
+            <input
+              id="card-number"
+              name="card-number"
+              type="text"
+              placeholder="Card Number"
+              required
+              aria-required="true">
+<br>
+               <label for="expiration">Expiration Date:</lable>
+            <input
+              id="expiration"
+              name="expiration"
+              type="text"
+              placeholder="Expiry Date"
+              aria-required="true"> 
+              <br>
+       <label for="cvv">Cvv:</label>
+       <input
+         id="cvv"
+         name="cvv"
+         type="text"
+         placeholder="CVV"
+         minlength="3"
+         maxlength="3"
+         required>     
+        </form>
+    </section>
+    <button type="submit">Submit</button>
+
+</body>
+
+</html>
